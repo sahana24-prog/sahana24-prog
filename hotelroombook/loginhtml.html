@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking Login</title>
-    <link rel="stylesheet" href="logincss.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="regcss.css">
+  <title>User Registration</title>
+  <script src="registration.js" defer></script>
 </head>
 <body>
-    <form id="loginForm" action="login.php" method="post">
-        <h2>Login</h2>
+  <h1>User Registration</h1>
+  <form action="hotel_booking.html" method="post" onsubmit="return validateRegistration()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$" title="Mix of characters and numbers required"><br><br>
 
-        <label for="loginUsername">Username:</label>
-        <input type="text" id="loginUsername" name="loginUsername" size="20" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required><br><br>
 
-        <label for="loginPassword">Password:</label>
-        <input type="password" id="loginPassword" name="loginPassword" size="20" required>
-
-        <button type="submit">Login</button>
-
-        <a href="forgot-password.html">Forgot Password?</a>
-        <a href="registration.html">Don't have an account? Register here.</a>
-    </form>
+    <input type="submit" value="Register">
+  </form>
 </body>
 </html>
