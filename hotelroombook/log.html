@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="regcss.css">
+  <title>User Registration</title>
+  <script>
+    // JavaScript for mouse events and objects
+    document.addEventListener("DOMContentLoaded", function() {
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+
+      // Mouse Events
+      usernameInput.addEventListener("mouseover", function() {
+        console.log("Mouse over the username input field");
+      });
+
+      usernameInput.addEventListener("mouseout", function() {
+        console.log("Mouse out of the username input field");
+      });
+
+      usernameInput.addEventListener("mouseenter", function() {
+        console.log("Mouse entered the username input field");
+      });
+
+      passwordInput.addEventListener("mouseleave", function() {
+        console.log("Mouse left the password input field");
+      });
+
+      passwordInput.addEventListener("mousemove", function() {
+        console.log("Mouse moved over the password input field");
+      });
+
+      passwordInput.addEventListener("mouseup", function() {
+        console.log("Mouse button released over the password input field");
+      });
+
+      // Objects
+      const usernameObject = {
+        id: usernameInput.id,
+        name: usernameInput.name,
+        value: usernameInput.value
+      };
+
+      const passwordObject = {
+        id: passwordInput.id,
+        name: passwordInput.name,
+        value: passwordInput.value
+      };
+
+      console.log(usernameObject);
+      console.log(passwordObject);
+    });
+  </script>
+</head>
+<body>
+  <h1>User Registration</h1>
+  <form action="hotel_booking.html" method="post" onsubmit="return validateRegistration()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$" title="Mix of characters and numbers required"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
