@@ -1,0 +1,61 @@
+/* RegistrationForm.css */
+.registration-form-container {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Gray border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center; /* Center text */
+}
+
+input[type="radio"] {
+  margin-right: 10px; /* Add spacing between radio buttons */
+}
+
+.btn-reset,
+.btn-submit {
+  display: block;
+  margin: 0 auto; /* Center buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: #f44336; /* Red */
+  color: #fff;
+}
+
+.btn-submit {
+  background-color: #4caf50; /* Green */
+  color: #fff;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+  opacity: 0.8;
+}
